@@ -1,3 +1,5 @@
+import '../ReservationCard/ReservationCard.css'
+
 function ReservationCard ({ id, name, date, time, number }) {
     return (
         <div className='reservation-card'>
@@ -5,7 +7,7 @@ function ReservationCard ({ id, name, date, time, number }) {
             <p>{date}</p>
             <p>{time}</p>
             <p>Number of guests: {number}</p>
-            <button>CANCEL</button>
+            <button className='cancel-button'>CANCEL</button>
         </div>
     )
 }

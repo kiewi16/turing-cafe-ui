@@ -1,0 +1,9 @@
+input {
+    margin: 5px;
+}
+
+.make-reservation-button {
+    background-color: teal;
+    color: white;
+    padding: 5px;
+}

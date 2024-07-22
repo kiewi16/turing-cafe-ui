@@ -2,8 +2,6 @@ import ReservationCard from "../ReservationCard/ReservationCard"
 import '../Reservations/Reservations.css'
 
 function Reservations({ reservations }) {
-    console.log("reservations in Reservations:", reservations)
-
     const reservationInfoCards = reservations.map(reservation => {
         return (
             <ReservationCard

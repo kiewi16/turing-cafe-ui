@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../Form/Form.css'
 
 function Form( {addReservation} ) {
     const [name, setName] = useState('')
@@ -28,7 +29,7 @@ function Form( {addReservation} ) {
     }
 
     return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='form'>
         <input
             id="name"
             type="text"
@@ -57,7 +58,7 @@ function Form( {addReservation} ) {
             value={number}
             onChange={(event) => setNumber(event.target.value)}
         />
-        <button type="submit">MAKE RESERVATION</button>
+        <button type="submit" className="make-reservation-button">MAKE RESERVATION</button>
     </form>
     )
 }
