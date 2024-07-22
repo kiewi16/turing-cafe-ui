@@ -4,10 +4,11 @@
     margin: 2px; 
     color: teal;
     border-radius: 10%;
+    font-size: 15px;
 }
 .cancel-button {
     background-color: teal;
     color: white;
     width: 75%;
-    margin-bottom: 3px;
+    margin-bottom: 3px;    
 }
