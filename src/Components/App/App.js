@@ -18,8 +18,17 @@ function App() {
     getReservations()
   }, [])
 
-  function addReservation(newReservation) {
-    setReservations([...reservations, newReservation])
+  function addReservation(newReservation) {    
+    fetch('http://localhost:3001/api/v1/reservations', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newReservation), 
+  })
+    .then(response => response.json())
+    .then(data => setReservations([...reservations, data]))
+    .catch(error => console.log(error.message)) 
   }
 
   return (
