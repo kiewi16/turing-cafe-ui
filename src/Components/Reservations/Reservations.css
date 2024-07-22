@@ -1,0 +1,4 @@
+.reservations-container {
+    display: grid;
+    grid-template: (3, 1fr);
+}
